@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: relative;
+            margin-top: 100px;
+            margin-left: 100px;
+            position: relative;
+        }
+
+        .box::before {
+            content: '';
+            position: absolute;
+            background-color: green;
+            height: 100%;
+            width: 100%;
+            left: 100px;
+            z-index: 10;
+        }
+
+        .box::after {
+            content: 'hello';
+            position: absolute;
+            background-color: blue;
+            height: 100%;
+            width: 100%;
+           left: 150px;
+           z-index: 11;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        
+    </div>
+    
+</body>
+</html>
